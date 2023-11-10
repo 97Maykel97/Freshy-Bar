@@ -1,0 +1,37 @@
+.hero {
+	padding: 30px 0 85px;
+
+	&__title {
+		font-size: 84px;
+		font-weight: 900;
+		max-width: 880px;
+	}
+	&__cups {
+		display: flex;
+		gap: 20px;
+		padding-top: 270px;
+	}
+	&__cup {
+		position: relative;
+		width: 380px;
+		height: 382px;
+		border-radius: 24px;
+
+		&_pink {
+			background: #ff196c;
+		}
+		&_green {
+			background: #ffb72a;
+			margin-top: -70px;
+		}
+		&_orange {
+			background: #34b905;
+		}
+	}
+	&__img {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

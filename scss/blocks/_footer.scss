@@ -1,0 +1,29 @@
+.footer {
+	padding: 30px 0 32px;
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+		grid-template-areas:
+			'logo .'
+			'copyright developer';
+	}
+	&__logo {
+		grid-area: logo;
+	}
+	&__copyright {
+		grid-area: copyright;
+	}
+	&__developer {
+		grid-area: developer;
+		justify-self: end;
+	}
+	&__developer--item {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__developer-link {
+	}
+}
