@@ -1,3 +1,13 @@
 .goods {
-	padding-bottom: 70px;
+	padding: 60px 0 70px;
+	&__title {
+		margin-bottom: 40px;
+		font-size: 44px;
+		font-weight: 900;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 280px);
+		gap: 20px;
+	}
 }
