@@ -8,13 +8,14 @@
 	}
 	&__cups {
 		display: flex;
+		align-items: flex-end;
 		gap: 20px;
 		padding-top: 270px;
 	}
 	&__cup {
 		position: relative;
-		width: 380px;
-		height: 382px;
+		width: 100%;
+		aspect-ratio: 1/1;
 		border-radius: 24px;
 
 		&_pink {
@@ -22,6 +23,7 @@
 		}
 		&_green {
 			background: #ffb72a;
+			align-self: flex-start;
 			margin-top: -70px;
 		}
 		&_orange {
@@ -30,7 +32,8 @@
 	}
 	&__img {
 		position: absolute;
-		bottom: 50px;
+		width: 55%;
+		bottom: 13%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
